@@ -2,9 +2,9 @@
 //let count = 0;
 
 //-- 1. Create a variable, myAge, and set its value to your age
-// let myAge = 27;
+let myAge = 27;
 //-- 2. Log the myAge variable to the console
-// console.log(myAge);
+console.log(myAge);
 // ------------------------------------------------------------
 
 //-- let firstBatch = 5;
@@ -13,73 +13,136 @@
 //-- console.log(count);
 
 // --1. Create two variables, myAge and humanDogRatio
-// let myAge = 27;
-// let humanDogRatio = 7;
+//let myAge = 27;
+//let humanDogRatio = 7;
 //-- 2. Multiply the two together and store the result in myDogAge
-// let myDogAge = myAge \* humanDogRatio;
+//let myDogAge = myAge \* humanDogRatio;
 // --3. Log myDogAge to the console
-// console.log(myDogAge);
+//console.log(myDogAge);
 // ------------------------------------------------------------
 
-// let count = 5
+let count = 5
 //-- count + 1
-// count = count + 1
-// console.log(count)
+count = count + 1
+console.log(count)
 
 //-- Create a variable, bonusPoints. Initialize it as 50. Increase it to 100.
-// let bonusPoints = 50;
-// bonusPoints = bonusPoints + 50;
+let bonusPoints = 50;
+bonusPoints = bonusPoints + 50;
 //-- Decrease it down to 25, and then finally increase it to 70
-// bonusPoints = bonusPoints - 75;
-// bonusPoints = bonusPoints + 45;
-// console.log(bonusPoints);
+bonusPoints = bonusPoints - 75;
+bonusPoints = bonusPoints + 45;
+console.log(bonusPoints);
 // ------------------------------------------------------------
 
 //FUNCTIONS
 
 //-- Declared Function
-// function countdown() {
-// console.log(5)
-// console.log(4)
-// console.log(3)
-// console.log(2)
-// console.log(1)
-// };
+function countdown() {
+console.log(5)
+console.log(4)
+console.log(3)
+console.log(2)
+console.log(1)
+};
 
 //-- Invoked Function
-// countdown();
+countdown();
 // ------------------------------------------------------------
 
 //-- Create a function (you decide the name) that logs out the number 42 to the console
-// function number() {
-// console.log(42)
-// }
+function number() {
+console.log(42)
+}
 //-- Call/invoke the function
-// number();
+number();
 // ------------------------------------------------------------
 
-// let lap1 = 34;
-// let lap2 = 33;
-// let lap3 = 36;
+let lap1 = 34;
+let lap2 = 33;
+let lap3 = 36;
 
 //-- Create a function that logs out the sum of all the lap times
-// function lapSum() {
-// let total = lap1 + lap2 + lap3;
-// console.log(total);
+function lapSum() {
+let total = lap1 + lap2 + lap3;
+console.log(total);
 // OR
-// console.log(lap1 + lap2 + lap3);
-// };
-// lapSum();
+console.log(lap1 + lap2 + lap3);
+};
+lapSum();
 // ------------------------------------------------------------
 
 // let lapsCompleted = 0
 
 //-- Create a function that increments the lapsCompleted variable with one
-// function totalLaps() {
-// lapsCompleted = lapsCompleted + 1;
-// };
+function totalLaps() {
+lapsCompleted = lapsCompleted + 1;
+};
 //-- Run it three times
-// totalLaps()
-// totalLaps()
-// totalLaps()
-// console.log(lapsCompleted)
+totalLaps()
+totalLaps()
+totalLaps()
+console.log(lapsCompleted)
+// ------------------------------------------------------------
+// THE DOM
+// Document Object Model
+
+// 1. Document
+// The Html Document
+// 2. Object
+// The document keyword in javascript is of the datatype OBJECT.
+// Taking the html document and shoving it into a javascript object.
+// 3. Model
+// A representation or a modelation. Like the real saturn 5 rocket
+// that nasa built, and then there is the lego model.
+// Similarly there is the real html youve written in your .html file,
+// then there is the javascript model
+// REAL -- <h2 id="count-el">0</h2>
+// MODEL -- let countEl = document.getElementById("count-el");
+// The DOM is how you use javascript to modify a website
+// ------------------------------------------------------------
+
+// Strings
+let username = "Per";
+// "per" is a string which is inside a variable
+console.log(username);
+
+//-- Create a variable, message,
+//-- that stores the string: "You have tree new notifications"
+let message = "You have three new notifications";
+console.log(message + ", " + username + "!");
+// The text above is called a concactination
+
+//-- Create a variable, messageToUser, that contains the message we have logged
+let messageToUser = message + ", " + username + "!";
+console.log(messageToUser);
+
+// Create two variables, name and greeting.
+// The name variable should store your name,
+// and the greeting should store e.g. "Hi, my name is "
+let name = "Miah.";
+let greeting = "Hi, My name is ";
+
+// Create a third variable, myGreeting, that contatenates the two strings
+let myGreeting = greeting + name;
+
+// Log myGreeting to the console
+console.log(myGreeting);
+
+// If you change let name = 42, the 42 becomes a string.
+// In a wrestling match between a string and a number, the string always wins.
+
+let point = 4;
+let extraPoints = "10";
+
+let totalPoints = point + extraPoints;
+console.log(totalPoints);
+// result is 410 because you cant add a number to a string.
+// What happenes: let totalPoints = "4" + "10";
+
+// What will be the result of these console logs?
+console.log(4 + 5) // 9
+console.log("2" + "4") // "24"
+console.log("5" + 1) // "51"
+console.log(100 + "100") // "100100"
+// ------------------------------------------------------------

@@ -56,7 +56,7 @@ button {
   padding: 10px 20px;
   color: white;
   font-weight: bold;
-  max-width: 300px;
+  width: 300px;
   margin-bottom: 5px;
   border-radius: 5px;
   text-transform: uppercase;
@@ -64,9 +64,20 @@ button {
 
 #increment-btn {
   background: darkred;
+  box-shadow: 18px 18px 44px 5px rgba(0, 0, 0, 0.43);
+
+  &:hover {
+    box-shadow: inset 18px 18px 44px 5px rgba(0, 0, 0, 0.43);
+  }
 }
 
 #save-btn {
+  margin-top: 20px;
   background: darkgreen;
+  box-shadow: 18px 18px 44px 5px rgba(0, 0, 0, 0.43);
+
+  &:hover {
+    box-shadow: inset 18px 18px 44px 5px rgba(0, 0, 0, 0.43);
+  }
 }
 /* ----------------------------------------------------- */
