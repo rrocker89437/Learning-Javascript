@@ -20,8 +20,8 @@ function increment() {
 }
 // 1. Create a function, save(), which logs out the count when it's called
 function save() {
-  let countStr = count + " - ";
   // 2. Create a variable that contains both the count and the dash separator, i.e. "12 - "
+  let countStr = count + " - ";
   // 3. Render the variable in the saveEl using innerText
   // NB: Make sure to not delete the existing content of the paragraph
 
@@ -39,3 +39,52 @@ function save() {
   // count = 0
   console.log(count);
 }
+
+// ------------------------------------------------------------
+//CALCULATOR
+// ------------------------------------------------------------
+
+let num1 = 8;
+let num2 = 2;
+let total = 0;
+document.getElementById("num1-el").textContent = num1;
+document.getElementById("num2-el").textContent = num2;
+let sumEl = document.getElementById("sum-el");
+
+// Create four functions: add(), subtract(), divide(), multiply()
+// Call the correct function when the user clicks on one of the buttons
+// Perform the given calculation using num1 and num2
+
+function add() {
+  let total = num1 + num2;
+  sumEl.textContent = "Sum: " + total;
+}
+
+function subtract() {
+  let total = num1 - num2;
+  sumEl.textContent = "Sum: " + total;
+}
+
+function divide() {
+  let total = num1 / num2;
+  sumEl.textContent = "Sum: " + total;
+}
+
+function multiply() {
+  let total = num1 * num2;
+  sumEl.textContent = "Sum: " + total;
+}
+
+function eraseText() {
+  let total = 0;
+  sumEl.textContent = "Sum: ";
+  //   document.getElementById("reset").value = "";
+}
+
+// Render the result of the calculation in the paragraph with id="sum-el"
+// E.g. if the user clicks on the "Plus" button, you should render
+// "Sum: 10" (since 8 + 2 = 10) inside the paragraph with id="sum-el"
+
+// ------------------------------------------------------------
+//Game Score Tracker
+// ------------------------------------------------------------

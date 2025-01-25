@@ -29,6 +29,29 @@
         </div>
       </div>
 
+      <section id="reset" class="calculator">
+        <div class="container">
+          <div class="numbers">
+            <span class="number" id="num1-el"></span>
+            <span class="number" id="num2-el"></span>
+          </div>
+          <br />
+          <div class="calc-btns">
+            <button class="calc-btn add" onclick="add()">Add</button>
+            <button class="calc-btn subtract" onclick="subtract()">
+              Subtract
+            </button>
+            <button class="calc-btn divide" onclick="divide()">Divide</button>
+            <button class="calc-btn multiply" onclick="multiply()">
+              Multiply
+            </button>
+            <button class="calc-btn clear" onclick="eraseText()">Clear</button>
+          </div>
+          <br />
+          <span id="sum-el">Sum: </span>
+        </div>
+      </section>
+
       <script src="app.js"></script>
 
       <!-- <script>
