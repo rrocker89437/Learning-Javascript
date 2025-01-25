@@ -11,12 +11,22 @@
     <main>
       <!-- Passenger Counter -->
       <div>
-        <h1>People entered:</h1>
-        <h2 id="count-el">0</h2>
-        <button id="increment-btn" onClick="increment()">Increment</button>
-        <!-- 2. Create a SAVE button.
+        <div>
+          <h1>People entered:</h1>
+          <h2 id="count-el">0</h2>
+          <button id="increment-btn" onClick="increment()">Increment</button>
+          <!-- 2. Create a SAVE button.
         Set the id to "save-btn" and call the save() function when it's clicked -->
-        <button id="save-btn" onClick="save()">Save</button>
+          <button id="save-btn" onClick="save()">Save</button>
+        </div>
+        <button id="reset-btn">
+          <a href="/">Reset</a>
+        </button>
+        <div class="entries-box">
+          <p class="entries">Previous entries:</p>
+          <!--&nbsp;-->
+          <p class="saved" id="save-el"></p>
+        </div>
       </div>
 
       <script src="app.js"></script>

@@ -8,14 +8,26 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   text-align: center;
+  height: 100vh;
+  overflow-y: auto;
+  margin-bottom: 2.5rem;
+
+  @media (max-width: 600px) {
+    background-image: url(https://img.freepik.com/premium-photo/steam-train-journey-with-bitcoin-gold-bar-heist-bitcoin-loco-photo-trending-poster-background_1020495-298013.jpg);
+  }
 }
 
 div {
+  margin: 0 2rem;
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 40px;
+
+  /* @media (max-width: 600px) {
+    margin-inline: 2rem;
+  } */
 }
 
 h1 {
@@ -29,8 +41,14 @@ h1 {
     1.5433673469387756rem + 4.081632653061225vw,
     4.375rem
   );
-  margin-top: 10px;
+  margin-top: 0;
   margin-bottom: 10px;
+
+  @media (max-width: 600px) {
+    color: #f3f3f3;
+    text-shadow: 0px 0px 5px #000000;
+    margin: auto;
+  }
 }
 
 h2 {
@@ -42,6 +60,11 @@ h2 {
   );
   margin-top: 0;
   margin-bottom: 20px;
+
+  @media (max-width: 600px) {
+    color: #f3f3f3;
+    text-shadow: 0px 0px 5px #000000;
+  }
 }
 
 button {
@@ -53,31 +76,94 @@ button {
     2.5rem
   );
   border: none;
-  padding: 10px 20px;
+  padding: 20px 20px;
   color: white;
   font-weight: bold;
   width: 300px;
   margin-bottom: 5px;
   border-radius: 5px;
   text-transform: uppercase;
+
+  &:active {
+    transform: translateY(3px);
+    -webkit-box-shadow: inset 0px 0px 5px #000000;
+    -moz-box-shadow: inset 0px 0px 5px #000000;
+    box-shadow: inset 0px 0px 5px #ffffff;
+    outline: none;
+  }
 }
 
 #increment-btn {
   background: darkred;
-  box-shadow: 18px 18px 44px 5px rgba(0, 0, 0, 0.43);
 
   &:hover {
-    box-shadow: inset 18px 18px 44px 5px rgba(0, 0, 0, 0.43);
+    background: rgb(122, 0, 0);
   }
 }
 
 #save-btn {
   margin-top: 20px;
   background: darkgreen;
-  box-shadow: 18px 18px 44px 5px rgba(0, 0, 0, 0.43);
 
   &:hover {
-    box-shadow: inset 18px 18px 44px 5px rgba(0, 0, 0, 0.43);
+    background: rgb(0, 80, 0);
+  }
+}
+
+#reset-btn {
+  margin-top: 20px;
+  background: rgb(32, 32, 32);
+
+  &:hover {
+    background: rgb(17, 17, 17);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.entries-box {
+  /* @media (max-width: 600px) { */
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  /* -webkit-backdrop-filter: blur(5px); */
+  border-radius: 10px;
+  padding: 0 20px;
+}
+/* } */
+
+.entries {
+  color: #f3f3f3;
+  font-size: 1.25rem;
+  font-size: clamp(
+    1.25rem,
+    0.29336734693877564rem + 4.081632653061225vw,
+    3.125rem
+  );
+  text-shadow: 0px 0px 5px #000000;
+  /* margin-top: -35px; */
+
+  @media (max-width: 600px) {
+    margin-top: 10%;
+  }
+}
+
+.saved {
+  margin-top: 0.01%;
+  color: #f3f3f3;
+  font-size: 1.125rem;
+  font-size: clamp(
+    1.125rem,
+    0.7423469387755102rem + 1.6326530612244896vw,
+    1.875rem
+  );
+  text-shadow: 0px 0px 5px #000000;
+
+  @media (max-width: 600px) {
+    margin-top: -20px;
   }
 }
 /* ----------------------------------------------------- */
