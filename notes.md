@@ -146,3 +146,17 @@ console.log("2" + "4") // "24"
 console.log("5" + 1) // "51"
 console.log(100 + "100") // "100100"
 // ------------------------------------------------------------
+
+// Grab the welcome-el paragraph and store it in a variable called welcomeEl
+let welcomeEl = document.getElementById("welcome-el");
+// Create two variables (name & greeting) that contains your name
+// and the greeting we want to render on the page
+let myName = "Miah!";
+let newGreeting = "Welcome back ";
+// Render the welcome message using welcomeEl.innerText
+welcomeEl.innerText = newGreeting + myName;
+
+// Add an emoji to the end!
+// WRITE YOUR CODE BELOW HERE
+// HINT: count = count + 1
+welcomeEl.innerText = welcomeEl.innerText + "😍";
