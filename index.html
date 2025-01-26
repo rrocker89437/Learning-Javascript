@@ -29,6 +29,7 @@
         </div>
       </div>
 
+      <!-- Calculator -->
       <section id="reset" class="calculator">
         <div class="container">
           <div class="numbers">
@@ -49,6 +50,35 @@
           </div>
           <br />
           <span id="sum-el">Sum: </span>
+        </div>
+      </section>
+
+      <!-- Scoreboard -->
+      <section class="scoreboard">
+        <button class="newgame" id="new-game" onclick="newGame()">New Game</button>
+        <div class="flex">
+          <div class="home">
+            <h1 class="home__text">Home</h1>
+            <div class="score">
+              <span class="score__number scoreNum" id="home-score">0</span>
+            </div>
+            <div class="score__btns">
+              <button class="score__btn" id="home-score-btn-1" onclick="addOne()">+1</button>
+              <button class="score__btn" id="home-score-btn-2" onclick="addTwo()">+2</span>
+              <button class="score__btn" id="home-score-btn-3" onclick="addThree()">+3</span>
+            </div>
+          </div>
+          <div class="guest">
+            <h1 class="guest__text">Guest</h1>
+            <div class="score">
+              <span class="score__number scoreNum" id="guest-score">0</span>
+            </div>
+            <div class="score__btns">
+              <button class="score__btn" id="guest-score-btn-1" onclick="addOneG()">+1</button>
+              <button class="score__btn" id="guest-score-btn-2" onclick="addTwoG()">+2</button>
+              <button class="score__btn" id="guest-score-btn-3" onclick="addThreeG()">+3</button>
+            </div>
+          </div>
         </div>
       </section>
 

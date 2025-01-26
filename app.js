@@ -88,3 +88,61 @@ function eraseText() {
 // ------------------------------------------------------------
 //Game Score Tracker
 // ------------------------------------------------------------
+// document.getElementById("score-el").textContent = score;
+let homeScoreBtnOne = document.getElementById("home-score-btn-1");
+let homeStoreEl = document.getElementById("home-score");
+let homeScore = 0;
+
+function newGame() {
+  homeScore = 0;
+  guestScore = 0;
+  document.getElementById("home-score").textContent = 0;
+  document.getElementById("guest-score").textContent = 0;
+}
+
+function addOne() {
+  homeScore += 1;
+  homeStoreEl.textContent = homeScore;
+}
+function addTwo() {
+  homeScore += 2;
+  homeStoreEl.textContent = homeScore;
+}
+function addThree() {
+  homeScore += 3;
+  homeStoreEl.textContent = homeScore;
+}
+
+let guestScoreBtnOne = document.getElementById("guest-score-btn-1");
+let guestStoreEl = document.getElementById("guest-score");
+let guestScore = 0;
+
+function addOneG() {
+  guestScore += 1;
+  guestStoreEl.textContent = guestScore;
+}
+function addTwoG() {
+  guestScore += 2;
+  guestStoreEl.textContent = guestScore;
+}
+function addThreeG() {
+  guestScore += 3;
+  guestStoreEl.textContent = guestScore;
+}
+
+// const scoreSpans = document.querySelectorAll(".scoreNum");
+
+// scoreSpans.forEach((span) => {
+//   const score = parseInt(span.textContent);
+
+//   if (score > 1) {
+//     // Define your threshold here
+//     span.style.backgroundColor = "yellow"; // Highlight with a yellow background
+//   }
+// });
+
+// function TestTextHighlighting(highlightText) {
+//   var container = document.getElementById("guest-score");
+//   //   InstantSearch.highlight(container, highlightText);
+//   span.style.backgroundColor = "yellow";
+// }

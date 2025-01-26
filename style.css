@@ -1,6 +1,13 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Passenger Counter */
 
 body {
+  box-sizing: inherit;
   background-image: url("https://i.redd.it/qgntxkqrw5861.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -240,4 +247,93 @@ a {
   backdrop-filter: blur(5px);
   border-radius: 10px;
   padding: 0 20px;
+}
+
+/* ----------------------------------------------------- */
+
+.scoreboard {
+  background: rgb(142, 156, 212);
+  background: linear-gradient(
+    186deg,
+    rgba(142, 156, 212, 1) 0%,
+    rgba(61, 83, 173, 1) 45%,
+    rgba(27, 36, 74, 1) 100%
+  );
+  padding-bottom: 50px;
+  margin-top: 40px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+
+.home {
+  .home__text {
+    font-size: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+  }
+}
+
+.guest {
+  .guest__text {
+    font-size: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+  }
+}
+
+.score {
+  background-color: #000000;
+  /* padding: 50px; */
+  width: 155px;
+  height: 120px;
+  padding: 0 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin: 0;
+
+  .score__number {
+    cursor: pointer;
+    color: #f94f6d;
+    font-size: 90px;
+  }
+}
+
+.score__btns {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+
+  .score__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    border: 1px solid #9aabd8;
+    border-radius: 5px;
+    background: transparent;
+    color: #9aabd8;
+  }
+}
+
+.highlight {
+  border: 1px solid #f94f6d;
+}
+
+.newgame {
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
 }
