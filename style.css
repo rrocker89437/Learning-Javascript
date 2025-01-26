@@ -300,11 +300,13 @@ a {
   align-items: center;
   border-radius: 30px;
   margin: 0;
+  font-family: "Cursed Timer ULiL", sans-serif;
+  font-weight: 400;
 
   .score__number {
-    cursor: pointer;
     color: #f94f6d;
     font-size: 90px;
+    padding-top: 25px;
   }
 }
 
@@ -320,10 +322,12 @@ a {
     width: 45px;
     height: 45px;
     font-size: 18px;
+    padding-top: -15px;
     border: 1px solid #9aabd8;
     border-radius: 5px;
     background: transparent;
     color: #9aabd8;
+    font-family: "Cursed Timer ULiL", sans-serif;
   }
 }
 
